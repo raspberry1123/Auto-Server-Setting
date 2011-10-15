@@ -1,0 +1,10 @@
+default web
+
+prompt 0
+timeout 0
+
+label web
+kernel vmlinuz
+append initrd=initrd.img ks=http://172.16.1.30/ks/web.ks ksdevice=bootif
+IPAPPEND 2
+
